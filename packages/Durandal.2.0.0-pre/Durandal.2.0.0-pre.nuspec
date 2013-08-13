@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+  <metadata>
+    <id>Durandal</id>
+    <version>2.0.0-pre</version>
+    <title>Durandal</title>
+    <authors>Rob Eisenberg</authors>
+    <owners>Rob Eisenberg</owners>
+    <licenseUrl>https://raw.github.com/EisenbergEffect/Durandal/master/License.txt</licenseUrl>
+    <projectUrl>http://www.durandaljs.com/</projectUrl>
+    <iconUrl>http://durandaljs.com/images/icon_128.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Durandal is a cross-device, cross-platform client framework written in JavaScript and designed to make Single Page Applications (SPAs) easy to create and maintain. We've used it to build apps for PC, Mac, Linux, iOS and Android...and now it's your turn...
+
+Features
+-Clean MV* Architecture
+-JS &amp; HTML Modularity
+-Simple App Lifecycle
+-Eventing, Modals, Message Boxes, etc.
+-Navigation &amp; Screen State Management
+-Consistent Async Programming w/ Promises
+-App Bundling and Optimization
+-Use any Backend Technology
+-Built on top of jQuery, Knockout &amp; RequireJS.
+-Integrates with popular CSS libraries such as Bootstrap and Foundation.
+-Make your own templatable and data-bindable widgets.</description>
+    <summary>Durandal is a cross-device, cross-platform client framework written in JavaScript and designed to make Single Page Applications (SPAs) easy to create and maintain.</summary>
+    <releaseNotes />
+    <copyright>Copyright (c) 2012 Blue Spire Consulting, Inc.</copyright>
+    <language />
+    <tags>JavaScript JS Durandal HTML CSS MVC MVVM MVP Web SPA RIA Knockout RequireJS jQuery</tags>
+    <dependencies>
+      <dependency id="jQuery" version="1.6.0" />
+      <dependency id="knockoutjs" version="2.2.1" />
+      <dependency id="RequireJS" version="2.1.6" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,92 @@
+﻿body {
+    font-family: 'MisoRegular';
+}
+
+.mapsJsTextOrange
+{
+    color:  rgb(213, 103, 57);
+}
+
+.headerText
+{
+    font-size: 1.5em;
+    vertical-align: baseline;
+    margin-top: 2px;
+}
+
+.headerText2
+{
+    font-size: 1em;
+    vertical-align: baseline;
+    margin-top: 6px;
+}
+
+.calloutText
+{
+    position: absolute;
+    left: 4px;
+    height: 32px;
+    width: 200px;
+    font-size: 16px;
+    color: white;
+    width: 200px;
+    top: 24px;
+}
+
+.navIcons
+{
+    position: absolute; 
+    width: 32px; 
+    left: 16px;
+}
+
+.mapsjsMap
+{
+    background: black;
+    position: absolute; 
+    left: 0px; 
+    top: 0px; 
+    width: 100%; 
+    height: 100%;
+}
+
+.spinner
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -75px;
+    margin-top: -75px;
+    z-index: 20;
+    display: block;
+}
+
+.legend
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 36px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: white;
+    opacity: 0.9;
+    z-index: 20;
+}
+
+.panelTransition
+{
+    -webkit-transition: opacity 0.25s ease-out 0.25s, left 0.5s cubic-bezier(0,1,0,1), right 0.5s cubic-bezier(0,1,0,1);
+    -moz-transition: opacity 0.25s ease-out 0.25s, left 0.5s cubic-bezier(0,1,0,1), right 0.5s cubic-bezier(0,1,0,1);
+    -o-transition: opacity 0.25s ease-out 0.25s, left 0.5s cubic-bezier(0,1,0,1), right 0.5s cubic-bezier(0,1,0,1);
+    transition: opacity 0.25s ease-out 0.25s, left 0.5s cubic-bezier(0,1,0,1), right 0.5s cubic-bezier(0,1,0,1);
+}
+
+.glassChrome{
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -10px 20px rgba(0,0,0,0.3);
+    -o-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -10px 20px rgba(0,0,0,0.3);
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -10px 20px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 2px 6px rgba(0,0,0,0.5), inset 0 10px rgba(255,255,255,0.2), inset 0 10px 20px rgba(255,255,255,0.25), inset 0 -10px 20px rgba(0,0,0,0.3);
+}

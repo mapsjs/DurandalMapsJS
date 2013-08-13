@@ -1,0 +1,20 @@
+﻿<div>
+    <!--map-->
+    <div class="mapsjsMap" data-bind="rimMap: mapOptions">
+        
+        <!--NAVIGATION ICONS-->
+        <img id="globeImg" data-bind="click: baseMapSelect"
+            title="change base map type" src="./Content/images/globe-gray.png" alt="set base layer" class="navIcons" style="bottom: 112px;" />
+        <img id="zoomInImg" data-bind="click: zoomIn"
+            title="zoom in" src="./Content/images/zoom-in.png" alt="zoom in" class="navIcons" style="bottom: 64px;" />
+        <img id="zoomOutImg" data-bind="click: zoomOut"
+            title="zoom out" src="./Content/images/zoom-out.png" alt="zoom out" class="navIcons" style="bottom: 16px;" />
+
+    </div>
+    
+    <!--legend-->
+    <div class="legend" data-bind="compose: {model:'viewmodels/legend'}"></div>
+    
+    <!--busy indicator-->
+    <div data-bind="compose: { model: 'viewmodels/busy' }"></div>
+</div>
