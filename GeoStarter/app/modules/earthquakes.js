@@ -133,7 +133,7 @@
             }, _this);
 
             // watches this message to execute an identify query
-            app.on('map:pointer-hover').then(function (pt) {
+            app.on('map:pointer-click').then(function (pt) {
                 _query(pt);
             }, _this);
         },

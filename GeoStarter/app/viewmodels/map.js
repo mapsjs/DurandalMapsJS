@@ -30,20 +30,30 @@
         _map.rimMap('zoomDeltaAnimate', -1);
     };
 
+    var _hideCallout = function () {
+        if (_lastCallout) {
+            _map.rimMap('removeFixedContentElement', _lastCallout);
+        }
+        _lastCallout = null;
+    };
+
     // watches this message to place a callout on the map from an identify query result
     app.on('earthquake:query-result').then(function (feature) {
         if (_map) {
             viewEngine.createView('views/callout').then(function (callout) {
 
-                if (_lastCallout) {
-                    _map.rimMap('removeFixedContentElement', _lastCallout);
-                }
+                _hideCallout();
                 _lastCallout = callout;
 
                 $(callout).find('#calloutText').text('mag: ' + feature.magnitude + ' : ' + feature.place);
                 _map.rimMap('addFixedContentElement', callout, feature.shape.getX(), feature.shape.getY());
             });
         }
+    }, _this);
+
+    // if the dataset changes, go ahead and hide the callout
+    app.on('legend:days').then(function () {
+        _hideCallout();
     }, _this);
 
     return {
